@@ -8,12 +8,23 @@ import Menu from 'material-ui/svg-icons/navigation/menu';
 
 function NavBar() {
   return (
-    <AppBar
-      title="Home"
-      showMenuIconButton={false}
-      iconElementRight={<IconButton><Menu/></IconButton>}
-    />
+    <nav>
+      <div className="mobile-navbar">
+        <AppBar
 
+          style={{position: 'fixed',
+          top: '0'}}
+          title="Home"
+          showMenuIconButton={false}
+          iconElementRight={<IconButton><Menu/></IconButton>}
+        />
+      </div>
+      <aside className="tablet-navbar">
+        
+      </aside>
+      <div className="desktop-navbar">
+      </div>
+    </nav>
   );
 }
 

@@ -1,0 +1,14 @@
+/* Mobile View */
+.main-wrapper {
+  padding-top: 64px; }
+
+/* Tablet View */
+@media (min-width: 760px) {
+  .main-wrapper {
+    padding-top: 0;
+    padding-right: 100px; } }
+
+/* Desktop View */
+@media (min-width: 1309px) {
+  .main-wrapper {
+    padding-top: 80px; } }
