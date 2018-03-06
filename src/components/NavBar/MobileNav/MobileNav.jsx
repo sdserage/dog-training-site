@@ -1,4 +1,5 @@
 import React, {Component} from 'react';
+import '../NavBar.css';
 /* Components */
 import {Link} from 'react-router-dom';
 import AppBar from 'material-ui/AppBar';
@@ -48,6 +49,7 @@ export default class MobileNav extends Component {
             </IconButton>
         }/>
         <Popover
+          className="mobile-navbar-popover"
           open={open}
           anchorEl={anchorEl}
           anchorOrigin={{horizontal: 'left', vertical: 'top'}}
@@ -55,12 +57,29 @@ export default class MobileNav extends Component {
           onRequestClose={handleRequestClose}
         >
           <Menu>
-            <MenuItem primaryText='Home'/>
-            <MenuItem primaryText='About Us'/>
-            <MenuItem primaryText='Our Services'/>
-            <MenuItem primaryText='Training to Adoption'/>
-            <MenuItem primaryText='Training Troubleshooting'/>
-            <MenuItem primaryText='Online Store'/>
+            <Link to='/' onClick={handleRequestClose}>
+              <MenuItem primaryText='Home'/>
+            </Link>
+
+            <Link to='/about' onClick={handleRequestClose}>
+              <MenuItem primaryText='About Us'/>
+            </Link>
+
+            <Link to='/services' onClick={handleRequestClose}>
+              <MenuItem primaryText='Our Services'/>
+            </Link>
+
+            <Link to='/adoption' onClick={handleRequestClose}>
+              <MenuItem primaryText='Training to Adoption'/>
+            </Link>
+
+            <Link to='/troubleshooting' onClick={handleRequestClose}>
+              <MenuItem primaryText='Training Troubleshooting'/>
+            </Link>
+
+            <Link to='/store' onClick={handleRequestClose}>
+              <MenuItem primaryText='Online Store'/>
+            </Link>
           </Menu>
         </Popover>
       </nav>
