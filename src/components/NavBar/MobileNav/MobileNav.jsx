@@ -39,7 +39,8 @@ export default class MobileNav extends Component {
         <AppBar
           style={{
             position: 'fixed',
-            top: '0'
+            top: '0',
+            overflow: 'hidden'
           }}
           title="Logo"
           showMenuIconButton={false}

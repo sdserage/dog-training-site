@@ -1,7 +1,4 @@
 /* Mobile View */
-.tablet-navbar {
-  display: none; }
-
 .desktop-navbar {
   display: none; }
 
@@ -13,7 +10,7 @@
     display: none; }
   .desktop-navbar {
     position: fixed;
-    z-index: 8000;
+    overflow: hidden;
     top: 0;
     width: 100%;
     background-color: #4db6ac;

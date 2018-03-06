@@ -1,7 +1,6 @@
 import React, {Component} from 'react';
 import './NavBar.css';
 /* Components */
-import {Link} from 'react-router-dom';
 import MobileNav from './MobileNav/MobileNav';
 import DesktopNav from './DesktopNav/DesktopNav';
 
