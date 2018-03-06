@@ -1,0 +1,24 @@
+/* Mobile View */
+.tablet-navbar {
+  display: none; }
+
+.desktop-navbar {
+  display: none; }
+
+/* Desktop View */
+@media (min-width: 1024px) and (orientation: portrait), (min-width: 1024px) and (orientation: landscape) {
+  .mobile-navbar {
+    display: none; }
+  .mobile-navbar-popover {
+    display: none; }
+  .desktop-navbar {
+    position: fixed;
+    z-index: 8000;
+    top: 0;
+    width: 100%;
+    background-color: #4db6ac;
+    color: white;
+    display: flex;
+    justify-content: space-around; }
+    .desktop-navbar h2 {
+      padding: 20px 5px 20px 5px; } }
