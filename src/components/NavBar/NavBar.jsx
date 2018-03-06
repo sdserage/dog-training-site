@@ -3,6 +3,7 @@ import './NavBar.css';
 /* Components */
 import {Link} from 'react-router-dom';
 import MobileNav from './MobileNav/MobileNav';
+import DesktopNav from './DesktopNav/DesktopNav';
 
 class NavBar extends Component {
   constructor(props){
@@ -16,11 +17,7 @@ class NavBar extends Component {
     return (
       <div>
         <MobileNav/>
-        <nav className="tablet-navbar">
-
-        </nav>
-        <nav className="desktop-navbar">
-        </nav>
+        <DesktopNav/>
       </div>
     );
   };
