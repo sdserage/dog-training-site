@@ -1,31 +1,29 @@
-import React from 'react';
+import React, {Component} from 'react';
 import './NavBar.css';
 /* Components */
 import {Link} from 'react-router-dom';
-import AppBar from 'material-ui/AppBar';
-import IconButton from 'material-ui/IconButton';
-import Menu from 'material-ui/svg-icons/navigation/menu';
+import MobileNav from './MobileNav/MobileNav';
 
-function NavBar() {
-  return (
-    <nav>
-      <div className="mobile-navbar">
-        <AppBar
+class NavBar extends Component {
+  constructor(props){
+    super(props);
+    this.state = {
 
-          style={{position: 'fixed',
-          top: '0'}}
-          title="Home"
-          showMenuIconButton={false}
-          iconElementRight={<IconButton><Menu/></IconButton>}
-        />
+    };
+  };
+
+  render(){
+    return (
+      <div>
+        <MobileNav/>
+        <nav className="tablet-navbar">
+
+        </nav>
+        <nav className="desktop-navbar">
+        </nav>
       </div>
-      <aside className="tablet-navbar">
-        
-      </aside>
-      <div className="desktop-navbar">
-      </div>
-    </nav>
-  );
+    );
+  };
 }
 
 export default NavBar;
