@@ -4,16 +4,22 @@ import '../NavBar.css';
 import {Link} from 'react-router-dom';
 import AppBar from 'material-ui/AppBar';
 import IconButton from 'material-ui/IconButton';
+import SvgIcon from 'material-ui/SvgIcon';
 import MenuIcon from 'material-ui/svg-icons/navigation/menu';
 import Menu from 'material-ui/Menu';
 import MenuItem from 'material-ui/MenuItem';
 import Popover from 'material-ui/Popover';
+import LogoIconSVG from './LogoIconSVG';
 
 export default class MobileNav extends Component {
   constructor(props){
     super(props);
     this.state = {
       open: false,
+      iconStyles: {
+        width: '200px',
+        height: '50px'
+      }
     };
   };
 
@@ -33,7 +39,7 @@ export default class MobileNav extends Component {
 
   render(){
     const {handleClick, handleRequestClose} = this;
-    const {open, anchorEl} = this.state;
+    const {open, anchorEl, iconStyles} = this.state;
     return (
       <nav className="mobile-navbar">
         <AppBar
@@ -42,8 +48,13 @@ export default class MobileNav extends Component {
             top: '0',
             overflow: 'hidden'
           }}
-          title="Logo"
-          showMenuIconButton={false}
+          showMenuIconButton={true}
+
+          iconElementLeft={
+            <Link to='/' onClick={handleRequestClose}>
+              <LogoIconSVG/>
+            </Link>
+          }
           iconElementRight={
             <IconButton onClick={handleClick}>
               <MenuIcon/>
@@ -87,25 +98,3 @@ export default class MobileNav extends Component {
     );
   };
 }
-
-// <nav>
-//   <Link to=''>
-//     Home
-//   </Link>
-//
-//   <Link to=''>
-//     About Us
-//   </Link>
-//
-//   <Link to=''>
-//     Training to Adoption
-//   </Link>
-//
-//   <Link to=''>
-//     Training Troubleshooting
-//   </Link>
-//
-//   <Link to=''>
-//     Online Store
-//   </Link>
-// </nav>
