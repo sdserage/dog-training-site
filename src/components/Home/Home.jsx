@@ -18,7 +18,7 @@ function Home() {
         bgImage={runningPuppies}
         bgImageAlt="dog"
         bgClassName="home-parallax-img"
-        strength={100}
+        strength={200}
       >
         <div
           className='home-parallax'
