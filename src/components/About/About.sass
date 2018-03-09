@@ -1,0 +1,62 @@
+/* Mobile, Orientation: Portrait */
+#about::before
+  content: ' '
+  display: block
+  background-image: url('../../assets/images/marissaAndPups2.jpg')
+  background-position: 63%
+  background-repeat: no-repeat
+  background-size: cover
+  height: 100vh
+  width: 100vw
+  top: 0
+  bottom: 0
+  left: 0
+  right: 0
+  position: fixed
+  z-index: -10
+
+#about
+  display: flex
+  flex-direction: column
+  align-items: center
+
+.about-paragraph
+  background: rgba(255, 255, 255, 0.8)
+  padding: 24px
+  font-size: 1.2em
+
+.primary-paragraph
+  margin-top: 45vh
+
+/* Mobile, Orientation: Landscape */
+@media (orientation: landscape)
+  #about::before
+    background-position: 0% 100%
+    top: 40px
+
+  .main-header
+    align-self: flex-start
+
+/* iPhone X, Orientation: Landscape (super narrow) */
+@media (orientation: landscape) and (min-width: 812px)
+  #about::before
+    background-position: 0% 80%
+    top: 50px
+
+/* iPad, Orientation: Portrait */
+@media (orientation: portrait) and (min-width: 768px)
+  #about::before
+    background-position: 57% 0%
+
+/* Desktop View */
+@media (min-width: 1024px) and (orientation: portrait), (min-width: 1024px) and (orientation: landscape)
+  #about::before
+    background-image: url('../../assets/images/marissaAndPups.jpg')
+    background-position: 57% 80%
+    background-size: cover
+    height: 100vh
+
+  .main-header
+    align-self: center
+
+  .secondary-header
