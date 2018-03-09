@@ -4,6 +4,7 @@ import './Main.css';
 import router from '../../router';
 import NavBar from '../NavBar/NavBar';
 import {BrowserRouter as Router} from 'react-router-dom';
+import Footer from '../Footer/Footer';
 
 function Main() {
   return (
@@ -11,6 +12,7 @@ function Main() {
       <div className="main-wrapper">
         <NavBar/>
         {router}
+        <Footer/>
       </div>
     </Router>
   );
