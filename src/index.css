@@ -46,27 +46,40 @@ a:link, a:visited, a:hover, a:active {
   color: inherit; }
 
 body {
-  font-family: "Arima Madurai", cursive; }
+  font-family: "Handlee", cursive; }
 
 h1 {
-  font-size: 2em; }
+  font-size: 2em;
+  font-family: "Anton", sans-serif; }
 
 h2 {
-  font-size: 1.5em; }
+  font-size: 1.5em;
+  font-family: "Anton", sans-serif; }
 
 h3 {
-  font-size: 1.17em; }
+  font-size: 1.17em;
+  font-family: "Anton", sans-serif; }
 
 h4 {
-  font-size: 1.12em; }
+  font-size: 1.12em;
+  font-family: "Anton", sans-serif; }
 
 h5 {
-  font-size: .83em; }
+  font-size: .83em;
+  font-family: "Anton", sans-serif; }
 
 h6 {
-  font-size: .75em; }
+  font-size: .75em;
+  font-family: "Anton", sans-serif; }
 
 .main-header, .secondary-header {
-  font-family: "Anton", sans-serif;
   color: white;
   margin: 24px; }
+
+.tertiary-header {
+  color: black;
+  background: rgba(255, 140, 105, 0.8);
+  width: 100vw;
+  padding: 10px 0;
+  text-align: center;
+  margin-top: 24px; }

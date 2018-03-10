@@ -6,26 +6,39 @@ body
 
 h1
   font-size: 2em
+  font-family: $headerFont
 
 h2
   font-size: 1.5em
+  font-family: $headerFont
 
 h3
   font-size: 1.17em
+  font-family: $headerFont
 
 h4
   font-size: 1.12em
+  font-family: $headerFont
 
 h5
   font-size: .83em
+  font-family: $headerFont
 
 h6
   font-size: .75em
+  font-family: $headerFont
 
 .main-header
-  font-family: $headerFont
   color: white
   margin: 24px
 
 .secondary-header
   @extend .main-header
+
+.tertiary-header
+  color: black
+  background: $contrastColorClear
+  width: 100vw
+  padding: 10px 0
+  text-align: center
+  margin-top: 24px
