@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css?family=Anton|Arima+Madurai|Fredoka+One|Handlee|Patua+One");
 /* Mobile, Orientation: Portrait */
 #about::before {
   content: ' ';
@@ -21,12 +22,26 @@
   align-items: center; }
 
 .about-paragraph {
-  background: rgba(255, 255, 255, 0.8);
+  background: rgba(0, 151, 167, 0.8);
   padding: 24px;
-  font-size: 1.2em; }
+  font-size: 1.2em;
+  color: white; }
 
 .primary-paragraph {
   margin-top: 45vh; }
+
+.sans-padding-top {
+  padding-top: 0; }
+
+.paragraph-bottom-spacer {
+  margin-bottom: 24px; }
+
+.circle-portrait {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: solid #004d40 3px; }
 
 /* Mobile, Orientation: Landscape */
 @media (orientation: landscape) {
