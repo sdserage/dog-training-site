@@ -4,6 +4,7 @@ import './Main.css';
 import router from '../../router';
 import NavBar from '../NavBar/NavBar';
 import {BrowserRouter as Router} from 'react-router-dom';
+import ContactInfo from '../ContactInfo/ContactInfo';
 import Footer from '../Footer/Footer';
 
 function Main() {
@@ -12,6 +13,7 @@ function Main() {
       <div className="main-wrapper">
         <NavBar/>
         {router}
+        <ContactInfo/>
         <Footer/>
       </div>
     </Router>

@@ -7,7 +7,7 @@ const zIndex = {
   }
 };
 
-const theme1 = {
+export const theme1 = {
   lighterColor: colors.lightBlueLighten4,
   lightColor: colors.tealLighten2,
   mediumColor: colors.cyanDarken2,
@@ -23,8 +23,8 @@ const theme1 = {
         // "padding": 23
     }
 };
-const theme2 = {};
-const theme3 = {};
+export const theme2 = {};
+export const theme3 = {};
 
 export default {
   zIndex,
