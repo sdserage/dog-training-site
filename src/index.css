@@ -79,7 +79,7 @@ h6 {
 .tertiary-header {
   color: black;
   background: rgba(255, 140, 105, 0.8);
-  width: 100vw;
+  width: 100%;
   padding: 10px 0;
   text-align: center;
   margin-top: 24px; }

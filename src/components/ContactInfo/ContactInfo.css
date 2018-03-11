@@ -1,0 +1,11 @@
+@import url("https://fonts.googleapis.com/css?family=Anton|Arima+Madurai|Fredoka+One|Handlee|Patua+One");
+/*Mobile*/
+.contact-info {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  background-color: #004d40;
+  color: #4db6ac;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  justify-items: center; }
