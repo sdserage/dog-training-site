@@ -41,7 +41,9 @@
   height: 200px;
   border-radius: 50%;
   object-fit: cover;
-  border: solid #004d40 3px; }
+  border-style: solid;
+  border-color: #b3e5fc;
+  border-width: 5px; }
 
 /* Mobile, Orientation: Landscape */
 @media (orientation: landscape) {
