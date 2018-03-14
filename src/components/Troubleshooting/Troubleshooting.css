@@ -25,6 +25,7 @@
   padding: 24px;
   background: rgba(255, 140, 105, 0.8);
   display: grid;
+  grid-template-columns: 1fr 999fr;
   grid-template-areas: 'arrow q' '. a'; }
 
 .qa-question {
