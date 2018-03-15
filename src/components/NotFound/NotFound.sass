@@ -1,0 +1,56 @@
+@import "../../assets/partials/themeController"
+
+/* Mobile, Orientation: Portrait */
+#not-found::before
+  content: ' '
+  display: block
+  background-image: url('../../assets/images/sleepyDog.JPG')
+  background-position: 30%
+  background-repeat: no-repeat
+  background-size: cover
+  height: 100vh
+  width: 100vw
+  top: 0
+  bottom: 0
+  left: 0
+  right: 0
+  position: fixed
+  z-index: -10
+
+#not-found
+  display: flex
+  flex-direction: column
+  align-items: center
+  h1
+    margin: 24px
+    font-size: 2.5em
+  p
+    padding: 24px
+    font-size: 1.2em
+    line-height: 24px
+    background-color: rgba(255, 255, 255, 0.5)
+    margin-top: 20vh
+
+/* Mobile, Orientation: Landscape */
+@media (orientation: landscape)
+  #not-found::before
+    background-position: 0% 100%
+    top: 40px
+
+/* iPhone X, Orientation: Landscape (super narrow) */
+@media (orientation: landscape) and (min-width: 812px)
+  #not-found::before
+    background-position: 0% 80%
+    top: 50px
+
+/* iPad, Orientation: Portrait */
+@media (orientation: portrait) and (min-width: 768px)
+  #not-found::before
+    background-position: 57% 0%
+
+/* Desktop View */
+@media (min-width: 1024px) and (orientation: portrait), (min-width: 1024px) and (orientation: landscape)
+  #not-found::before
+    background-position: 57% 80%
+    background-size: cover
+    height: 100vh

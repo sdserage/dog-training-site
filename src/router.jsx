@@ -7,7 +7,7 @@ import Services from './components/Services/Services';
 import Adoption from './components/Adoption/Adoption';
 import Troubleshooting from './components/Troubleshooting/Troubleshooting';
 import Store from './components/Store/Store';
-// import NotFound from './components/NotFound/NotFound';
+import NotFound from './components/NotFound/NotFound';
 
 export default (
   <Switch>
@@ -17,7 +17,6 @@ export default (
     <Route path='/adoption'         component={Adoption}/>
     <Route path='/troubleshooting'  component={Troubleshooting}/>
     <Route path='/store'            component={Store}/>
-    {/*<Route path='/*'                component={NotFound}/>*/}
-    <Route path='/*'                component={Home}/>
+    <Route path='*'                 component={NotFound}/>
   </Switch>
 );
