@@ -1,0 +1,72 @@
+@import "../../assets/partials/themeController"
+
+/* Mobile, Orientation: Portrait */
+#adoption::before
+  content: ' '
+  display: block
+  background-image: url('../../assets/images/runningPuppies.jpg')
+  background-position: 55%
+  background-repeat: no-repeat
+  background-size: cover
+  height: 100vh
+  width: 100vw
+  top: 0
+  bottom: 0
+  left: 0
+  right: 0
+  position: fixed
+  z-index: -10
+
+#adoption
+  display: flex
+  flex-direction: column
+  align-items: center
+
+.adoption-main-paragraph
+  background: $lighterColorClear
+  padding: 24px
+  font-size: 1.2em
+  span
+    color: $darkColor
+    font-weight: bold
+
+.primary-paragraph
+  margin-top: 45vh
+
+.dog-info-display
+  display: flex
+  flex-direction: column
+  align-items: center
+
+.dog-info
+  padding: 24px
+  background-color: $lighterColorClear
+  display: flex
+  flex-direction: column
+  align-items: center
+  margin-top: 48px
+  h3
+    margin-bottom: 24px
+  img
+    @extend h3
+    width: 80vw
+  p
+    @extend h3
+  h5
+
+.dog-info-1st
+  margin-top: 0px
+
+/* Mobile, Orientation: Landscape */
+@media (orientation: landscape)
+  #adoption::before
+    background-position: 0%
+    top: 40px
+
+/* Desktop View */
+@media (min-width: 1024px) and (orientation: portrait), (min-width: 1024px) and (orientation: landscape)
+  #adoption::before
+    background-image: url('../../assets/images/playfulDog.JPG')
+    background-position: 55% 50%
+    background-size: cover
+    height: 100vh

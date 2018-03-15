@@ -3,11 +3,28 @@ import './Adoption.css';
 /* Images */
 
 /* Components */
+import DogInfoDisplay from './DogInfoDisplay';
+
+/* Constants */
+const formLink = 'https://docs.google.com/forms/d/1mrS9JsdkdfPGiethDCzblDJsWi64dPYej5yCyIVBna8/viewform?edit_requested=true';
 
 function Adoption() {
   return (
     <section id='adoption'>
+      <h1 className='main-header'>Train to Adopt</h1>
+      <p className='adoption-main-paragraph primary-paragraph'>
+        Our Train-to-Adopt program was established to help dogs from a variety
+        of backgrounds become more adoptable. The primary focus of this program
+        is to help dogs become better socialized and to give them a head start
+        on their training before going to their new home. Each dog is evaluated
+        in a variety of situations to figure out the best type of home they
+        should be adopted into for both the dog and their forever family. To
+        adopt one of our dogs,
+        <span> <a href={formLink} target='_blank'> please fill out this application today!</a></span>
+      </p>
 
+      <h2 className='secondary-header'>Featured Dogs*</h2>
+      <DogInfoDisplay/>
     </section>
   );
 }
@@ -15,29 +32,8 @@ function Adoption() {
 export default Adoption;
 
 /*
-
-Train to Adopt page
-
-Our Train-to-Adopt program was established to help dogs from a variety of backgrounds become more adoptable. The primary focus of this program is to help dogs become better socialized and to give them a head start on their training before going to their new home. Each dog is evaluated in a variety of situations to figure out the best type of home they should be adopted into for both the dog and their forever family.
-To adopt one of our dogs, please fill out this application today!
-(link for application, let me know if the link doesn't work)
+NLOL Adoption Application
 ​
- NLOL Adoption Application
-​
-
-Barnaby Jones (Picture above description)
-Hello! My name is Barnaby Jones and I am a Medium Australian Labradoodle! I was born in July of 2017 and I will grow to be around 30lbs! I'm told that I have an adorable underbite that gives me charm, whatever that means! I love to snuggle up on the couch, play with toys that make me think, play fetch, chew on bones and bully sticks, and wrestle with my brother, Freddy the Yeti! The car is not my favorite place because it makes me feel sick to my stomach, but I love exploring and going to places like the mountains and the beach! I love chasing the seagulls at the dog beach, but always make sure to come back when called! My coat is considered curly fleece and I am considered hypoallergenic. My hair requires regular grooming to keep me looking like an adorable teddybear. I am pretty attached to my brother, Freddy, and would like to find a home with him, if I can! We promise to give you double the love and fun!
-Barnaby Jones is available for adoption for $1,200 by himself or $2,000 for him and Freddy the Yeti together. Please email for more information on Barnaby and the training he has had so far.
-
-Freddy the Yeti (Picture above description)
-Hi there! My name is Freddy the Yeti and I am a Medium Australian Labradoodle! My name was given to me because when I first came to New Lead On Life Dog Training, I would make Yeti noises at night when I was feeling unsure. I was born in July of 2017 and I will grow to be around 30lbs! I am a little bit bigger than my brother, Barnaby, but I am told that I have a more slender build like my Poodle ancestors. I love to snuggle and give kisses! I'm told that I have an anteater tongue, whatever that means! My favorite thing to do is snuggle, but I also love to meet new people, play with my brother, chew on bones and bully sticks, and find toys to play with. My coat is considered a fleece coat and I am also considered hypoallergenic. My hair requires regular grooming to keep me looking like an adorable teddybear! I am pretty attached to my brother, Barnaby, and would like to find a home with him if I can! We promise to give you double the love and fun!
-Freddy the Yeti is available for adoption for $1,200 by himself or $2,000 for him and Barnaby Jones together. Please email for more information on Freddy and the training he has had so far.
-
-
-
-
-
-
 NLOL Adoption Application
 Thank you for your interest in adoption one of our dogs! We take the time to get to know each dog individually to best know their personalities and their needs for their new homes. It is our goal to place our dogs in homes with the best match possible for them and their new families. Please take the time to fill this application out thoroughly and honestly so that we can help match you to the best furry companion possible.
 * Required

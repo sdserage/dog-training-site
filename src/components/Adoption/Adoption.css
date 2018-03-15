@@ -1,0 +1,67 @@
+@import url("https://fonts.googleapis.com/css?family=Anton|Arima+Madurai|Fredoka+One|Handlee|Patua+One");
+/* Mobile, Orientation: Portrait */
+#adoption::before {
+  content: ' ';
+  display: block;
+  background-image: url("../../assets/images/runningPuppies.jpg");
+  background-position: 55%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
+  width: 100vw;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  position: fixed;
+  z-index: -10; }
+
+#adoption {
+  display: flex;
+  flex-direction: column;
+  align-items: center; }
+
+.adoption-main-paragraph {
+  background: rgba(179, 229, 252, 0.8);
+  padding: 24px;
+  font-size: 1.2em; }
+  .adoption-main-paragraph span {
+    color: #004d40;
+    font-weight: bold; }
+
+.primary-paragraph {
+  margin-top: 45vh; }
+
+.dog-info-display {
+  display: flex;
+  flex-direction: column;
+  align-items: center; }
+
+.dog-info {
+  padding: 24px;
+  background-color: rgba(179, 229, 252, 0.8);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 48px; }
+  .dog-info h3, .dog-info img, .dog-info p {
+    margin-bottom: 24px; }
+  .dog-info img {
+    width: 80vw; }
+
+.dog-info-1st {
+  margin-top: 0px; }
+
+/* Mobile, Orientation: Landscape */
+@media (orientation: landscape) {
+  #adoption::before {
+    background-position: 0%;
+    top: 40px; } }
+
+/* Desktop View */
+@media (min-width: 1024px) and (orientation: portrait), (min-width: 1024px) and (orientation: landscape) {
+  #adoption::before {
+    background-image: url("../../assets/images/playfulDog.JPG");
+    background-position: 55% 50%;
+    background-size: cover;
+    height: 100vh; } }
