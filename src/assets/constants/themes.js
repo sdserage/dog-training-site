@@ -17,6 +17,8 @@ export const theme1 = {
   darkColor: colors.tealDarken4,
   contrastColor: colors.salmon,
 
+  fontFamily:'"Anton", sans-serif',
+
   appBar: {
         "color": colors.tealLighten2,
         "textColor": "white"
