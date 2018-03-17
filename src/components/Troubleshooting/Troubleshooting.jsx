@@ -1,9 +1,9 @@
-import React, {Component} from 'react';
+import React /*, {Component}*/ from 'react';
 import './Troubleshooting.css';
 /* Images */
 
 /* Components */
-import DisplayQuestions from './DisplayQuestions';
+import DisplayQuestions from './functionalComponents//DisplayQuestions';
 
 function Troubleshooting() {
   return (

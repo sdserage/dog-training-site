@@ -11,7 +11,7 @@ export default function ContactInfo(){
   return (
     <nav className='contact-info'>
       <ContactLink
-        href={'https://eyi9.app.link/qdWcRHiRbL'}
+        href={'https://urlgeni.us/facebook/jR2M'/*'https://eyi9.app.link/qdWcRHiRbL'*/}
         isCustomSvg={true}
         pathAttributes={{d: facebook_d}}
         color={iconColor}
@@ -21,7 +21,7 @@ export default function ContactInfo(){
         <Email color={iconColor}/>
       </ContactLink>
       <ContactLink
-        href={'https://eyi9.app.link/LIzxsJ1QbL'}
+        href={'https://urlgeni.us/instagram/o5rY'/*'https://eyi9.app.link/LIzxsJ1QbL'*/}
         isCustomSvg={true}
         pathAttributes={{d: instagram_d}}
         color={iconColor}

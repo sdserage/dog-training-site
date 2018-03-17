@@ -1,8 +1,9 @@
 import React, {Component} from 'react';
-import {theme1} from '../../assets/constants/themes';
+import {theme1} from '../../../assets/constants/themes';
 /* Images */
 
 /* Components */
+import Paragraph from '../../../assets/functionalComponents/Paragraph/Paragraph';
 import FloatingActionButton from 'material-ui/FloatingActionButton';
 import Arrow from 'material-ui/svg-icons/hardware/keyboard-arrow-right';
 import {Link} from 'react-router-dom';
@@ -26,8 +27,9 @@ export default class QA extends Component {
   }
 
   render(){
-    const {q, a, linkText, linkAddress} = this.props;
+    const {q, a, links} = this.props;
     const {displayAnswer} = this.state
+    const beforeText = <span className='qa-a'>A: </span>
     return (
       <div className='qa'>
       <FloatingActionButton
@@ -45,21 +47,15 @@ export default class QA extends Component {
         />
       </FloatingActionButton>
         <h2 className='qa-question'>Q: {q}</h2>
-
         {
           displayAnswer &&
-            <p className='qa-answer'>
-              <span className='qa-a'>A: </span>
-              {a}
-              {
-                linkText &&
-                  <span className='qa-link'>
-                    <Link to={linkAddress}>
-                      {` ${linkText}`}
-                    </Link>
-                  </span>
-              }
-            </p>
+            <Paragraph
+              textBlock={a}
+              before={beforeText}
+              parseChar={'|'}
+              linksArr={links}
+              className='qa-answer'
+            />
         }
       </div>
     );
