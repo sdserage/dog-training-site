@@ -51,6 +51,9 @@
   -ms-animation: fadein 1s;
   -o-animation: fadein 1s;
   animation: fadein 1s; }
+  .qa-answer .generated-link-text {
+    color: white;
+    font-weight: bold; }
 
 @-webkit-keyframes fadein {
   from {
@@ -107,7 +110,3 @@
 .qa-a {
   font-family: "Anton", sans-serif;
   font-size: 1.2em; }
-
-.qa-link {
-  color: white;
-  font-weight: bold; }
