@@ -13,7 +13,7 @@ export default function Paragraph(props){
     linksArr. The value it receives will intially be the first item in the linksArr
     and will increment for each link.
   */
-  const parsedText = textBlock.split(`${parseChar}`);
+  const parsedText = parseChar ? textBlock.split(`${parseChar}`) : [];
   let linkInterator = 0;
   return (
     <p className={className}>
@@ -53,7 +53,7 @@ export default function Paragraph(props){
               of normal text and hyper-link text.
 
   linksArr -  Array. An array of links. Each link is a string.
-  
+
   className - String. The name(s) of the css class(es) that will be applied to the 'p'
               tag.
 
