@@ -23,7 +23,7 @@ function Home() {
         className='logo-desktop'
       />
 
-      <h2 className='secondary-header'>
+      <h2 className='main-header'>
         Welcome to New Lead On Life Dog Training!
       </h2>
 

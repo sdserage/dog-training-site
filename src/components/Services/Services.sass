@@ -1,0 +1,53 @@
+@import "../../assets/partials/themeController"
+
+/* Mobile, Orientation: Portrait */
+#services::before
+  content: ' '
+  display: block
+  background-image: url('../../assets/images/twoDogs.JPG')
+  background-position: 60%
+  background-repeat: no-repeat
+  background-size: cover
+  height: 100vh
+  width: 100vw
+  top: 0
+  bottom: 0
+  left: 0
+  right: 0
+  position: fixed
+  z-index: -10
+
+#services
+  display: flex
+  flex-direction: column
+  align-items: center
+
+.services-paragraph
+  padding: 24px
+  background-color: $mediumColorClear
+  color: white
+  .generated-link-text
+    color: $darkColor
+    font-weight: bold
+
+.services-1st
+  padding-top: 24px
+
+/* Mobile, Orientation: Landscape */
+@media (orientation: landscape)
+  #services::before
+    background-position: 0% 100%
+    top: 40px
+
+/* Desktop View */
+@media (min-width: 1024px) and (orientation: portrait), (min-width: 1024px) and (orientation: landscape)
+  #services::before
+    background-position: 55% 50%
+    background-size: cover
+    height: 100vh
+
+  .logo-desktop
+    display: block
+    margin: 24px
+    width: 35vw
+    align-self: flex-end
