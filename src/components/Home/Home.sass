@@ -1,3 +1,5 @@
+@import "../../assets/partials/themeController"
+
 /* Mobile, Orientation: Portrait */
 #home::before
   content: ' '
@@ -22,6 +24,16 @@
 
 .logo-desktop
   display: none
+
+.home-paragraph
+  padding: 0 24px 24px 24px
+  background-color: $lighterColorClear
+  .generated-link-text
+    color: $mediumColor
+    font-weight: bold
+
+.home-1st
+  padding-top: 24px
 
 /* Mobile, Orientation: Landscape */
 @media (orientation: landscape)
