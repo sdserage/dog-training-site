@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css?family=Anton|Arima+Madurai|Fredoka+One|Handlee|Patua+One");
 /* Mobile, Orientation: Portrait */
 #home::before {
   content: ' ';
@@ -22,6 +23,16 @@
 
 .logo-desktop {
   display: none; }
+
+.home-paragraph {
+  padding: 0 24px 24px 24px;
+  background-color: rgba(179, 229, 252, 0.8); }
+  .home-paragraph .generated-link-text {
+    color: #0097a7;
+    font-weight: bold; }
+
+.home-1st {
+  padding-top: 24px; }
 
 /* Mobile, Orientation: Landscape */
 @media (orientation: landscape) {

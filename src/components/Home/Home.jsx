@@ -2,6 +2,17 @@ import React from 'react';
 import './Home.css';
 /* Images */
 import blackLogo from '../../assets/images/nlolBlack.png';
+/* Components */
+import Paragraph from '../../assets/functionalComponents/Paragraph/Paragraph';
+
+const hardCoded1stParagraph = "Our training philosophy is that learning should be fun for both the dog and their owner while still being educational and relationship-building. Effective communication is essential to a healthy and loving human-canine relationship."
+
+const hardCoded2ndParagraph = "At New Lead on Life, we use positive reinforcement techniques that are science-based, fun, and flexible. Not all dogs learn in the same way and any good training plan needs to be able to adapt to the needs of each individual dog."
+
+const hardCodedServicesLink = "Check out our |services page| to see how we can help you and your dog today! Serving the Bakersfield, CA area.";
+const hardCodedServicesLinkArr = ['/services'];
+
+const hardCodedFinalParagraph = "Find us on Facebook at fb.me/nloldogtraining or follow us on Instagram at @newleadonlifedogtraining";
 
 function Home() {
   return (
@@ -12,7 +23,35 @@ function Home() {
         className='logo-desktop'
       />
 
-      <div style={{height: '400vh'}}></div>
+      <h2 className='main-header'>
+        Welcome to New Lead On Life Dog Training!
+      </h2>
+
+      <Paragraph
+        textBlock={hardCoded1stParagraph}
+        parseChar='|'
+        className='home-paragraph primary-paragraph home-1st'
+      />
+
+      <Paragraph
+        textBlock={hardCoded2ndParagraph}
+        parseChar='|'
+        className='home-paragraph'
+      />
+
+      <Paragraph
+        textBlock={hardCodedServicesLink}
+        parseChar='|'
+        linksArr={hardCodedServicesLinkArr}
+        className='home-paragraph'
+      />
+
+      <Paragraph
+        textBlock={hardCodedFinalParagraph}
+        parseChar='|'
+        className='home-paragraph'
+      />
+
     </section>
   );
 }
