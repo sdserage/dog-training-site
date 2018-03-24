@@ -13,7 +13,11 @@ export default function Paragraph(props){
     linksArr. The value it receives will intially be the first item in the linksArr
     and will increment for each link.
   */
-  const parsedText = parseChar ? textBlock.split(`${parseChar}`) : [];
+  const PARSE_CHAR = parseChar || '|'; //Defaults to '|' if not specified
+  const parsedText = typeof textBlock === 'string' ? // Verifies if textBlock is a string
+    textBlock.split(`${PARSE_CHAR}`) // Sets parsedText to an array of strings
+      :
+    []; // Sets parsedText to an empty array
   let linkInterator = 0;
   return (
     <p className={className}>
@@ -23,13 +27,25 @@ export default function Paragraph(props){
           if (i % 2 === 0){
             return text;
           }else{
-            return (
-              <span className='generated-link-text' key={i}>
-                <Link to={linksArr[linkInterator++]}>
-                  {text}
-                </Link>
-              </span>
-            );
+            const {url, isOutside, alt, target} = linksArr[linkInterator++];
+            const TARGET = target || '_blank'; // Defaults to '_blank' if not specified
+            if(isOutside){
+              return (
+                <span className='generated-link-text' key={i}>
+                  <a href={url?url:''} target={TARGET} alt={alt}>
+                    {text}
+                  </a>
+                </span>
+              );
+            }else{
+              return (
+                <span className='generated-link-text' key={i}>
+                  <Link to={url?url:''} alt={alt}>
+                    {text}
+                  </Link>
+                </span>
+              );
+            }
           }
         })
       }
@@ -52,7 +68,10 @@ export default function Paragraph(props){
               it will be used to divide the textBlock into alternating sections
               of normal text and hyper-link text.
 
-  linksArr -  Array. An array of links. Each link is a string.
+  linksArr -  Array. An array of links. Each link is a link object. Link objects
+              must have a url prop that is a string and can optionally have an
+              isOutside prop that is bool. If isOutside is true, an 'a' tag will
+              be used instead of a Link component.
 
   className - String. The name(s) of the css class(es) that will be applied to the 'p'
               tag.
