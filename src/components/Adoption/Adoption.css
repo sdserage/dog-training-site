@@ -25,7 +25,7 @@
   background: rgba(179, 229, 252, 0.8);
   padding: 24px;
   font-size: 1.2em; }
-  .adoption-main-paragraph span {
+  .adoption-main-paragraph .generated-link-text {
     color: #004d40;
     font-weight: bold; }
 
@@ -44,10 +44,14 @@
   flex-direction: column;
   align-items: center;
   margin-top: 48px; }
-  .dog-info h3, .dog-info img, .dog-info p {
+  .dog-info h3, .dog-info img, .dog-info .description, .dog-info .summary {
     margin-bottom: 24px; }
   .dog-info img {
     width: 80vw; }
+  .dog-info .summary {
+    font-family: "Anton", sans-serif; }
+    .dog-info .summary .generated-link-text {
+      color: #004d40; }
 
 .dog-info-1st {
   margin-top: 0px; }
