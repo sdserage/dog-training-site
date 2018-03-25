@@ -19,7 +19,6 @@ function Services() {
       </h2>
       <Paragraph
         textBlock={hardCodedPrivateTrainingP}
-        parseChar='|'
         className="services-paragraph"
       />
 
@@ -28,7 +27,6 @@ function Services() {
       </h2>
       <Paragraph
         textBlock="Coming soon! Stay tuned!"
-        parseChar='|'
         className="services-paragraph"
       />
 
@@ -37,7 +35,6 @@ function Services() {
       </h2>
       <Paragraph
         textBlock="Coming soon! Stay tuned!"
-        parseChar='|'
         className="services-paragraph"
       />
 

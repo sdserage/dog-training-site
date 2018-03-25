@@ -26,7 +26,7 @@
   background: $lighterColorClear
   padding: 24px
   font-size: 1.2em
-  span
+  .generated-link-text
     color: $darkColor
     font-weight: bold
 
@@ -50,9 +50,13 @@
   img
     @extend h3
     width: 80vw
-  p
+  .description
     @extend h3
-  h5
+  .summary
+    @extend h3
+    font-family: $headerFont
+    .generated-link-text
+      color: $darkColor
 
 .dog-info-1st
   margin-top: 0px

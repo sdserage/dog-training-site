@@ -3,25 +3,27 @@ import './Adoption.css';
 /* Images */
 
 /* Components */
+import Paragraph from '../../assets/functionalComponents/Paragraph/Paragraph';
 import DogInfoDisplay from './DogInfoDisplay';
 
 /* Constants */
-const formLink = 'https://docs.google.com/forms/d/1mrS9JsdkdfPGiethDCzblDJsWi64dPYej5yCyIVBna8/viewform?edit_requested=true';
+const hardCodedPrimaryParagraph = "Our Train-to-Adopt program was established to help dogs from a variety of backgrounds become more adoptable. The primary focus of this program is to help dogs become better socialized and to give them a head start on their training before going to their new home. Each dog is evaluated in a variety of situations to figure out the best type of home they should be adopted into for both the dog and their forever family. To adopt one of our dogs, |please fill out an application today!"
+const hardCodedPrimaryParagraphLinks = [
+  {
+    url: 'https://docs.google.com/forms/d/1mrS9JsdkdfPGiethDCzblDJsWi64dPYej5yCyIVBna8/viewform?edit_requested=true',
+    isOutside: true
+  }
+]
 
 function Adoption() {
   return (
     <section id='adoption'>
-      <h1 className='main-header'>Train to Adopt</h1>
-      <p className='adoption-main-paragraph primary-paragraph'>
-        Our Train-to-Adopt program was established to help dogs from a variety
-        of backgrounds become more adoptable. The primary focus of this program
-        is to help dogs become better socialized and to give them a head start
-        on their training before going to their new home. Each dog is evaluated
-        in a variety of situations to figure out the best type of home they
-        should be adopted into for both the dog and their forever family. To
-        adopt one of our dogs,
-        <span> <a href={formLink} target='_blank'> please fill out this application today!</a></span>
-      </p>
+      <h1 className='main-header'>Training to Adoption</h1>
+      <Paragraph
+        className='adoption-main-paragraph primary-paragraph'
+        textBlock={hardCodedPrimaryParagraph}
+        linksArr={hardCodedPrimaryParagraphLinks}
+      />
 
       <h2 className='secondary-header'>Featured Dogs*</h2>
       <DogInfoDisplay/>

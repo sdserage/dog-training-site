@@ -10,9 +10,24 @@ const hardCoded1stParagraph = "Our training philosophy is that learning should b
 const hardCoded2ndParagraph = "At New Lead on Life, we use positive reinforcement techniques that are science-based, fun, and flexible. Not all dogs learn in the same way and any good training plan needs to be able to adapt to the needs of each individual dog."
 
 const hardCodedServicesLink = "Check out our |services page| to see how we can help you and your dog today! Serving the Bakersfield, CA area.";
-const hardCodedServicesLinkArr = ['/services'];
+const hardCodedServicesLinkArr = [
+  {
+    url: '/services',
+    isOutside: false
+  }
+];
 
-const hardCodedFinalParagraph = "Find us on Facebook at fb.me/nloldogtraining or follow us on Instagram at @newleadonlifedogtraining";
+const hardCodedFinalParagraph = "Find us on Facebook at |fb.me/nloldogtraining| or follow us on Instagram at |@newleadonlifedogtraining";
+const hardCodedFinalParagraphLinks = [
+  {
+    url: 'https://urlgeni.us/facebook/jR2M',
+    isOutside: true
+  },
+  {
+    url: 'https://urlgeni.us/instagram/o5rY',
+    isOutside: true
+  }
+]
 
 function Home() {
   return (
@@ -29,13 +44,11 @@ function Home() {
 
       <Paragraph
         textBlock={hardCoded1stParagraph}
-        parseChar='|'
         className='home-paragraph primary-paragraph home-1st'
       />
 
       <Paragraph
         textBlock={hardCoded2ndParagraph}
-        parseChar='|'
         className='home-paragraph'
       />
 
@@ -48,7 +61,7 @@ function Home() {
 
       <Paragraph
         textBlock={hardCodedFinalParagraph}
-        parseChar='|'
+        linksArr={hardCodedFinalParagraphLinks}
         className='home-paragraph'
       />
 
