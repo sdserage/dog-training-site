@@ -1,7 +1,7 @@
 import React from 'react';
 
 /* Components */
-import Paragraph from '../../assets/functionalComponents/Paragraph/Paragraph';
+import Paragraph from '../../../../assets/functionalComponents/Paragraph/Paragraph';
 
 export default function DogInfo(props) {
   const {image, name, description, summary, summaryLinks, index} = props;
@@ -14,7 +14,3 @@ export default function DogInfo(props) {
     </li>
   );
 }
-/*
-  linkInfo - I need to create a string parser that grabs a section of the
-  summary and turns it into a link with the linkInfo as the href
-*/

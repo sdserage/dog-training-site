@@ -4,7 +4,7 @@ import './Adoption.css';
 
 /* Components */
 import Paragraph from '../../assets/functionalComponents/Paragraph/Paragraph';
-import DogInfoDisplay from './DogInfoDisplay';
+import DogInfoDisplay from './functionalComponents/DogInfoDisplay/DogInfoDisplay';
 
 /* Constants */
 const hardCodedPrimaryParagraph = "Our Train-to-Adopt program was established to help dogs from a variety of backgrounds become more adoptable. The primary focus of this program is to help dogs become better socialized and to give them a head start on their training before going to their new home. Each dog is evaluated in a variety of situations to figure out the best type of home they should be adopted into for both the dog and their forever family. To adopt one of our dogs, |please fill out an application today!"
