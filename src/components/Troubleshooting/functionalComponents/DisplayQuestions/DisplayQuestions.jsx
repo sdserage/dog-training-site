@@ -1,6 +1,6 @@
 import React from 'react';
 /* Components */
-import QA from '../QA/QA';
+import QA from '../../QA/QA';
 /* Constants */
 const hardCodedQs=[
   {

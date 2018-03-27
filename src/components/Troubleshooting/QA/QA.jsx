@@ -6,7 +6,6 @@ import {theme1} from '../../../assets/constants/themes';
 import Paragraph from '../../../assets/functionalComponents/Paragraph/Paragraph';
 import FloatingActionButton from 'material-ui/FloatingActionButton';
 import Arrow from 'material-ui/svg-icons/hardware/keyboard-arrow-right';
-import {Link} from 'react-router-dom';
 
 /* Constants */
 const {lighterColor} = theme1

@@ -1,9 +1,9 @@
 import React from 'react';
 /* Images */
-import barnabyJones from '../../assets/images/barnabyJonesCollage.jpg';
-import freddyTheYeti from '../../assets/images/freddyTheYetiCollage.jpg';
+import barnabyJones from '../../../../assets/images/barnabyJonesCollage.jpg';
+import freddyTheYeti from '../../../../assets/images/freddyTheYetiCollage.jpg';
 /* Components */
-import DogInfo from './DogInfo';
+import DogInfo from '../DogInfo/DogInfo.jsx';
 
 /* Constants */
 const hardCodedDogs = [
