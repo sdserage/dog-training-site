@@ -3,7 +3,7 @@ import './Troubleshooting.css';
 /* Images */
 
 /* Components */
-import DisplayQuestions from './functionalComponents//DisplayQuestions';
+import DisplayQuestions from './functionalComponents/DisplayQuestions/DisplayQuestions';
 
 function Troubleshooting() {
   return (

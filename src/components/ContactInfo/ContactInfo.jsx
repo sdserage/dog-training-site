@@ -2,7 +2,7 @@ import React from 'react';
 import './ContactInfo.css';
 import {theme1, facebook_d, instagram_d} from '../../assets/constants/themes';
 /* Components */
-import ContactLink from './functionalComponents/ContactLink';
+import ContactLink from './functionalComponents/ContactLink/ContactLink';
 import Email from 'material-ui/svg-icons/communication/email';
 
 export default function ContactInfo(){
