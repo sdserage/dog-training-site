@@ -1,6 +1,6 @@
 import React from 'react';
-import {Route, Switch} from 'react-router-dom';
 /* Components */
+import {Route, Switch} from 'react-router-dom';
 import ScrollToTop from './components/ScrollToTop/ScrollToTop';
 import Home from './components/Home/Home';
 import About from './components/About/About';
