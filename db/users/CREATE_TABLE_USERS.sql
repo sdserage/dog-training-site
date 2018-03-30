@@ -1,0 +1,8 @@
+CREATE TABLE users(
+  user_id SERIAL PRIMARY KEY NOT NULL,
+  email VARCHAR(400),
+  user_name VARCHAR(80),
+  is_employee BOOLEAN DEFAULT FALSE NOT NULL,
+  is_admin BOOLEAN DEFAULT FALSE NOT NULL,
+  auth_id TEXT NOT NULL
+);

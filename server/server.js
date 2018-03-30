@@ -27,13 +27,11 @@ app.use(session({                 // Step one
 }));
 
 // massive
-// massive(process.env.CONNECTION_STRING).then(db => {
-//     app.set('db', db);
-//     app.listen(PORT, () => console.log(`Listening on port ${PORT}`));
-//     console.log('Massive initialized')
-// });
-
-app.listen(PORT, () => console.log(`Listening on port ${PORT}`));
+massive(process.env.CONNECTION_STRING).then(db => {
+  app.set('db', db);
+  app.listen(PORT, () => console.log(`Listening on port ${PORT}`));
+  console.log('Massive initialized')
+});
 
 // auth(app);
 
