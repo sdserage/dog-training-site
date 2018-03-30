@@ -1,7 +1,7 @@
 require('dotenv').config();
-const passport = require('passport')
-    , url = process.env.REACT_APP_URL || process.env.URL
-    , strategy = require('./strategy');
+const passport =  require('passport')
+    , url =       process.env.REACT_APP_URL || process.env.URL
+    , strategy =  require('./strategy');
 
 module.exports = function auth(app){
   passport.use(strategy(app));

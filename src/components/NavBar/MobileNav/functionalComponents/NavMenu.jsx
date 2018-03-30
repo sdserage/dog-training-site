@@ -1,6 +1,7 @@
 import React from 'react';
+import { theme1 } from '../../../../assets/constants/themes';
 /* Components */
-import {Link} from 'react-router-dom';
+import { Link } from 'react-router-dom';
 import Menu from 'material-ui/Menu';
 import MenuItem from 'material-ui/MenuItem';
 import Popover from 'material-ui/Popover';
@@ -40,6 +41,11 @@ export default function NavMenu(props){
         <Link to='/store' onClick={handleRequestClose}>
           <MenuItem primaryText='Online Store'/>
         </Link>
+      </Menu>
+      <Menu>
+        <a href={process.env.REACT_APP_LOGIN}>
+          <MenuItem style={{color: theme1.mediumColor}} primaryText='Login'/>
+        </a>
       </Menu>
     </Popover>
   );
