@@ -3,11 +3,9 @@ const express       = require('express')
     , session       = require('express-session')
     , bodyParser    = require('body-parser')
     , massive       = require('massive')
-    //, passport      = require('passport')
-    //, Auth0Strategy = require('passport-auth0')
     , cors          = require('cors')
-    // , auth          = require('./auth')
-    // , inquiries     = require('./inquiries');
+    , auth          = require('./auth')
+
 /* Set Port */
 const PORT = process.env.PORT || 3011;
 /* Create express app */
@@ -27,15 +25,13 @@ app.use(session({                 // Step one
 }));
 
 // massive
-// massive(process.env.CONNECTION_STRING).then(db => {
-//     app.set('db', db);
-//     app.listen(PORT, () => console.log(`Listening on port ${PORT}`));
-//     console.log('Massive initialized')
-// });
+massive(process.env.CONNECTION_STRING).then(db => {
+  app.set('db', db);
+  app.listen(PORT, () => console.log(`Listening on port ${PORT}`));
+  console.log('Massive initialized')
+});
 
-app.listen(PORT, () => console.log(`Listening on port ${PORT}`));
-
-// auth(app);
+auth(app);
 
 const path = require('path')
 app.get('*', (req, res)=>{

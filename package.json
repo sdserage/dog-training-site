@@ -12,7 +12,6 @@
     "massive": "^4.7.1",
     "material-ui": "^0.20.0",
     "node-sass-chokidar": "0.0.3",
-    "npm": "^5.7.1",
     "passport": "^0.4.0",
     "passport-auth0": "^0.6.1",
     "react": "^16.2.0",

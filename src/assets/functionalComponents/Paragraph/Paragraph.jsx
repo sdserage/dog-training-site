@@ -1,9 +1,9 @@
 import React from 'react';
 /* Components */
-import {Link} from 'react-router-dom';
+import { Link } from 'react-router-dom';
 
 export default function Paragraph(props){
-  const {textBlock, before, after, parseChar, linksArr, className} = props;
+  const { textBlock, before, after, parseChar, linksArr, className } = props;
   /*
     Splits the text by the parseChar into an array. Text with an even numbered
     index (e.g., 0, 2, 4, etc.) will be returned as normal text. Text with an odd
@@ -27,22 +27,22 @@ export default function Paragraph(props){
           if (i % 2 === 0){
             return text;
           }else{
-            const {url, isOutside, alt, target} = linksArr[linkInterator++];
+            const { url, alt, target } = linksArr[linkInterator++];
             const TARGET = target || '_blank'; // Defaults to '_blank' if not specified
-            if(isOutside){
-              return (
-                <span className='generated-link-text' key={i}>
-                  <a href={url?url:''} target={TARGET} alt={alt}>
-                    {text}
-                  </a>
-                </span>
-              );
-            }else{
+            if(url.substring(0,1) === '/'){
               return (
                 <span className='generated-link-text' key={i}>
                   <Link to={url?url:''} alt={alt}>
                     {text}
                   </Link>
+                </span>
+              );
+            }else{
+              return (
+                <span className='generated-link-text' key={i}>
+                  <a href={url?url:''} target={TARGET} alt={alt}>
+                    {text}
+                  </a>
                 </span>
               );
             }
