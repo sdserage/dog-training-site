@@ -6,8 +6,8 @@ const express       = require('express')
     //, passport      = require('passport')
     //, Auth0Strategy = require('passport-auth0')
     , cors          = require('cors')
-    // , auth          = require('./auth')
-    // , inquiries     = require('./inquiries');
+    , auth          = require('./auth')
+
 /* Set Port */
 const PORT = process.env.PORT || 3011;
 /* Create express app */
@@ -33,7 +33,7 @@ massive(process.env.CONNECTION_STRING).then(db => {
   console.log('Massive initialized')
 });
 
-// auth(app);
+auth(app);
 
 const path = require('path')
 app.get('*', (req, res)=>{
