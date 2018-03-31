@@ -37,14 +37,15 @@ const hardCodedQs=[
 ];
 
 export default function DisplayQuestions(props){
-  const qas = hardCodedQs.map((question, i)=>{
+  const { faqs } = props;
+  const mappedFaqs = faqs.map((faq, i)=>{
     return (
-      <QA {...question} key={i}/>
+      <QA {...faq} key={i}/>
     );
   });
   return(
     <section>
-      {qas}
+      {mappedFaqs}
     </section>
   );
 }

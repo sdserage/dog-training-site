@@ -26,7 +26,7 @@ export default class QA extends Component {
   }
 
   render(){
-    const {q, a, links} = this.props;
+    const {question, answer, links} = this.props;
     const {displayAnswer} = this.state
     const beforeText = <span className='qa-a'>A: </span>
     return (
@@ -45,11 +45,11 @@ export default class QA extends Component {
           }
         />
       </FloatingActionButton>
-        <h2 className='qa-question'>Q: {q}</h2>
+        <h2 className='qa-question'>Q: {question}</h2>
         {
           displayAnswer &&
             <Paragraph
-              textBlock={a}
+              textBlock={answer}
               before={beforeText}
               parseChar={'|'}
               linksArr={links}
