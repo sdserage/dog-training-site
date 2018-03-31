@@ -1,0 +1,5 @@
+CREATE TABLE faqs(
+  faq_id SERIAL PRIMARY KEY NOT NULL,
+  question VARCHAR(300) NOT NULL,
+  answer TEXT NOT NULL
+);

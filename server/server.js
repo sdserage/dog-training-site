@@ -5,6 +5,8 @@ const express       = require('express')
     , massive       = require('massive')
     , cors          = require('cors')
     , auth          = require('./auth')
+    , faqs          = require('./faqs')
+    ;
 
 /* Set Port */
 const PORT = process.env.PORT || 3011;
@@ -32,6 +34,7 @@ massive(process.env.CONNECTION_STRING).then(db => {
 });
 
 auth(app);
+faqs(app);
 
 const path = require('path')
 app.get('*', (req, res)=>{
