@@ -38,11 +38,11 @@ const hardCodedQs=[
 
 export default function DisplayQuestions(props){
   const { faqs } = props;
-  const mappedFaqs = faqs.map((faq, i)=>{
+  const mappedFaqs = faqs ? faqs.map((faq, i)=>{
     return (
       <QA {...faq} key={i}/>
     );
-  });
+  }) : [];
   return(
     <section>
       {mappedFaqs}
